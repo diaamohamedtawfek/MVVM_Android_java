@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="ltr"
+    android:layout_height="wrap_content">
+
+
+
+
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_centerInParent="true"
+            app:cardUseCompatPadding="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_courzses"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="11dp"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <ImageView
+
+                    android:scaleType="fitXY"
+                    android:id="@+id/image_coursses"
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp"
+                    android:src="@mipmap/ic_launcher"
+                    />
+
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:gravity="center|right"
+                    android:paddingLeft="17dp"
+                    android:paddingRight="17dp"
+                    android:background="#99b73c"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/text_name_coursses"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center|right"
+                            android:layout_gravity="center|right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textSize="18dp"
+                            android:textColor="#ffffff"
+                            android:lineSpacingExtra="7sp"
+                            android:text="كورس برنامج الأرت كام"
+                            />
+
+                        <TextView
+                            android:id="@+id/text_date_coursses"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center|right"
+                            android:layout_gravity="center|left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textSize="14dp"
+                            android:textColor="#ffffff"
+                            android:text="كورس برنامج الأرت كام"
+                            android:textDirection="ltr"
+                            />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/licenser"
+        android:visibility="visible"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="235dp"
+        >
+    </LinearLayout>
+
+
+    <!--    Oferss -->
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="8dp"
+        android:layout_alignParentLeft="true"
+        android:background="@color/colorPrimary"
+        android:layout_width="140dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        >
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/oferDecound"
+            android:layout_marginTop="11dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:text="نقوم بترشيحه١١١"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
